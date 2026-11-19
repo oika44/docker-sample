@@ -38,4 +38,10 @@ sudo docker compose $COMPOSE_ARGS rm --force -v
 
 # テスト結果の終了コードをJenkinsに伝える
 exit $ERR
+# Pull down the system
+sudo docker compose $COMPOSE_ARGS stop
+sudo docker compose $COMPOSE_ARGS rm --force -v
+
+# テスト結果の終了コードをJenkinsに伝える
+exit $ERR
 
