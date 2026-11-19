@@ -10,7 +10,7 @@
         - redis
 
     dnmonster: 
-        image: oika99/dnmonster:1.0
+        image: amouat/dnmonster:1.0
 
     redis:
         image: redis
